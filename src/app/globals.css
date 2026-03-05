@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+/* default theme variables; update with brand colors when known */
+:root {
+  --color-bg: #fdfdfd;
+  --color-text: #333333;
+  --color-accent: #2a5d34; /* dark green from mockup title */
+  --font-sans: var(--font-sans);
+  --font-body: var(--font-body);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #111111;
+    --color-text: #f0f0f0;
+  }
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body), sans-serif;
+  line-height: 1.6;
+}
+
