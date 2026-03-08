@@ -8,21 +8,23 @@ export default function Header() {
           שלם מלב שבור
         </Link>
         <nav>
-          <ul className="flex space-x-6 rtl:space-x-reverse">
+          <ul className="flex space-x-6 rtl:space-x-reverse items-center">
             <li>
-              <Link href="#about" className="text-gray-700 hover:text-[var(--color-accent)]">על הספר</Link>
+              <Link href="#about" className="text-gray-700 hover:text-[var(--color-accent)] transition">על הספר</Link>
             </li>
             <li>
-              <Link href="#summary" className="text-gray-700 hover:text-[var(--color-accent)]">תקציר ופרק ראשון</Link>
+              <Link href="#author" className="text-gray-700 hover:text-[var(--color-accent)] transition">המחבר</Link>
             </li>
             <li>
-              <Link href="#author" className="text-gray-700 hover:text-[var(--color-accent)]">המחבר</Link>
+              <Link href="#faq" className="text-gray-700 hover:text-[var(--color-accent)] transition">שאלות</Link>
             </li>
             <li>
-              <Link href="#buy" className="text-gray-700 hover:text-[var(--color-accent)]">רכישה</Link>
-            </li>
-            <li>
-              <Link href="#contact" className="text-gray-700 hover:text-[var(--color-accent)]">צור קשר</Link>
+              <Link 
+                href="#buy" 
+                className="bg-[var(--color-accent)] text-white px-6 py-2 rounded-full font-bold hover:bg-opacity-90 transition"
+              >
+                קנה עכשיו
+              </Link>
             </li>
           </ul>
         </nav>
