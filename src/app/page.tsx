@@ -8,11 +8,11 @@ export default function Home() {
           <div className="w-48 mx-auto mb-8">
             <img src="/cover.png" alt="כיסוי הספר שלם מלב שבור" className="w-full h-auto rounded-lg shadow-2xl" />
           </div>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-            עזרה ראשונה לנפש: המדריך המעשי שיעזור לך לחזור לשלוט בחיים אחרי הגירושין
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            לבנות את החיים מחדש: הדרך שלך ליציבות רגשית ב-90 יום
           </h1>
           <p className="text-xl md:text-2xl mb-4 font-light">
-            שלם מלב שבור - המדריך הרגשי הראשון בעברית לגרושים ופרודים טריים
+            מדריך פרקטי המלווה אותך צעד אחר צעד מרגעי הכאוס להתחלה חדשה ובטוחה
           </p>
           <p className="text-lg mb-8 max-w-2xl mx-auto opacity-90 font-medium">
             אם אתם מתמודדים עם כעס, בדידות, חרדה ופחדים מהעתיד – המדריך הזה נכתב במיוחד עבורכם!
@@ -42,12 +42,15 @@ export default function Home() {
       </section>
 
       {/* Lead Magnet Section */}
-      <section id="leadmagnet" className="w-full py-20 px-4 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
+      <section id="leadmagnet" className="w-full py-20 px-4 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
         <div className="max-w-3xl mx-auto text-center">
-          <div className="text-6xl mb-6">🎁</div>
-          <h2 className="text-4xl font-bold mb-6">קבלו 5 טיפים חיוניים בחינם</h2>
+          <div className="text-6xl mb-6">✅</div>
+          <h2 className="text-4xl font-bold mb-6">צ'ק-ליסט הישרדות חינם!</h2>
+          <p className="text-2xl font-bold mb-4 text-yellow-300">
+            10 דברים שחובה לדעת בשבוע הראשון לגירושין
+          </p>
           <p className="text-xl mb-8 leading-relaxed">
-            "5 הטיפים שעזרו לי לשרוד את השבוע הראשון של הגירושין"
+            קומה בדיוק מה לעשות כדי לא לאבד את הראש (או את הבית)"
           </p>
           <p className="text-lg mb-8 opacity-90">
             הזינו את האימייל שלכם וקבלו מיידית את ה-PDF עם 5 הטיפים הקריטיים להתמודדות רגשית בימים הראשונים
@@ -57,19 +60,188 @@ export default function Home() {
             <input
               type="email"
               placeholder="הכנס כתובת אימייל"
-              className="w-full px-4 py-3 mb-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-blue-600"
+              className="w-full px-4 py-3 mb-4 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-orange-500"
               required
             />
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white px-6 py-3 font-bold text-lg rounded-lg hover:bg-blue-700 transition transform hover:scale-105"
+              className="w-full bg-orange-500 text-white px-6 py-3 font-bold text-lg rounded-lg hover:bg-orange-600 transition transform hover:scale-105 mb-3"
             >
-              שלחו לי את 5 הטיפים עכשיו →
+              קבלו את הצ'ק-ליסט בחינם →
             </button>
+            <p className="text-sm text-gray-700 font-semibold">
+              💌 תקבלו גם טיפים שבועיים במייל
+            </p>
             <p className="text-xs text-gray-600 mt-4">
               אנחנו לא שוברים את ההסכם - בריאות הרוח שלכם היא העדיפות שלנו
             </p>
           </form>
+        </div>
+      </section>
+
+      {/* Trust Signals - Video Testimonials */}
+      <section className="w-full py-20 px-4 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-4 text-gray-800">עדויות מחיים אמיתיים</h2>
+          <p className="text-xl text-center text-gray-600 mb-12">קוראים שחוו פריצות דרך רגשיות</p>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Video Testimony 1 */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+              <div className="bg-gray-900 aspect-video flex items-center justify-center text-white">
+                <iframe 
+                  className="w-full h-full" 
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                  title="עדות וידאו ממחברת"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="p-6">
+                <h3 className="font-bold text-lg mb-2">שרה כ., 42</h3>
+                <p className="text-gray-600">"מדריך שינה את חיי בשלושה חודשים"</p>
+              </div>
+            </div>
+
+            {/* Video Testimony 2 */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+              <div className="bg-gray-900 aspect-video flex items-center justify-center text-white">
+                <iframe 
+                  className="w-full h-full" 
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                  title="עדות וידאו מקורא"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="p-6">
+                <h3 className="font-bold text-lg mb-2">דוד מ., 38</h3>
+                <p className="text-gray-600">"לא הייתי בטוח שאני יהיה טוב... עכשיו אני"</p>
+              </div>
+            </div>
+
+            {/* Video Testimony 3 */}
+            <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition">
+              <div className="bg-gray-900 aspect-video flex items-center justify-center text-white">
+                <iframe 
+                  className="w-full h-full" 
+                  src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                  title="עדות וידאו מקורא"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen
+                ></iframe>
+              </div>
+              <div className="p-6">
+                <h3 className="font-bold text-lg mb-2">רחל ל., 35</h3>
+                <p className="text-gray-600">"השתנויות מדהימות וקיימות"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Order Bump - Audiobook Section */}
+      <section className="w-full py-16 px-4 bg-gradient-to-r from-amber-50 to-orange-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl border-2 border-orange-200">
+            <div className="text-center mb-8">
+              <div className="text-5xl mb-4">🎧</div>
+              <h3 className="text-3xl font-bold text-gray-800 mb-2">הוסיפו גרסת שמע לריפוי מהנסיעה</h3>
+              <p className="text-xl text-gray-600">קראו בעברית דיוקן: גרסה מקצועית בדיבור של המחבר</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
+              <div>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-center"><span className="text-orange-500 text-2xl mr-3">✓</span> האדה מקצועית בקול המחבר</li>
+                  <li className="flex items-center"><span className="text-orange-500 text-2xl mr-3">✓</span> 12 שעות תוכן מלא</li>
+                  <li className="flex items-center"><span className="text-orange-500 text-2xl mr-3">✓</span> הורדה למכשיר + Spotify</li>
+                  <li className="flex items-center"><span className="text-orange-500 text-2xl mr-3">✓</span> הקשבה בקצב משוחרר</li>
+                </ul>
+              </div>
+              <div className="bg-gradient-to-br from-orange-400 to-orange-600 text-white p-8 rounded-xl text-center">
+                <p className="text-sm opacity-90 mb-2">הוספה לעגלה בהנחה</p>
+                <p className="text-4xl font-bold mb-2">₪49</p>
+                <p className="text-sm line-through opacity-75 mb-4">₪89</p>
+                <button className="w-full bg-white text-orange-600 px-6 py-3 font-bold rounded-lg hover:bg-gray-100 transition">
+                  הוסף לעגלה
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Upsell - Restart Workshop */}
+      <section className="w-full py-16 px-4 bg-gradient-to-r from-blue-50 to-teal-50">
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-white rounded-2xl p-8 md:p-12 shadow-xl border-2 border-blue-200">
+            <div className="text-center mb-8">
+              <div className="text-5xl mb-4">🎓</div>
+              <h3 className="text-3xl font-bold text-gray-800 mb-2">סדנת "ריסטארט" - התחלה חדשה</h3>
+              <p className="text-xl text-gray-600">8 שיחות מוקלטות עמוקות להוצאה לפועל של כלים</p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <ul className="space-y-3 text-gray-700">
+                  <li className="flex items-center"><span className="text-blue-500 text-2xl mr-3">✓</span> 8 סדנות מוקלטות מלאות</li>
+                  <li className="flex items-center"><span className="text-blue-500 text-2xl mr-3">✓</span> דיונים חיים עם קהילה</li>
+                  <li className="flex items-center"><span className="text-blue-500 text-2xl mr-3">✓</span> טפסי עבודה אינטראקטיביים</li>
+                  <li className="flex items-center"><span className="text-blue-500 text-2xl mr-3">✓</span> גישה לקהילה סגורה לשנה</li>
+                </ul>
+              </div>
+              <div className="bg-gradient-to-br from-blue-500 to-teal-600 text-white p-8 rounded-xl text-center">
+                <p className="text-sm opacity-90 mb-2">משלמים בנפרד</p>
+                <p className="text-4xl font-bold mb-2">₪199</p>
+                <p className="text-sm opacity-75 mb-4">גישה לשנה שלמה</p>
+                <button className="w-full bg-white text-blue-600 px-6 py-3 font-bold rounded-lg hover:bg-gray-100 transition">
+                  למד עוד
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Objection Handling - Decision Fatigue Relief */}
+      <section className="w-full py-20 px-4 bg-gradient-to-b from-blue-50 to-blue-100">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">אנחנו יודעים שיש מחדלות</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Objection 1: Time */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <div className="text-4xl mb-4">⏰</div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">"אין לי זמן"</h3>
+              <p className="text-gray-600 mb-4">
+                כל פרק במדריך מעוצב ל-15 דקות של טרגול יומיומי. אפילו בנהיגה או בקפה בבוקר.
+              </p>
+              <p className="text-lg font-semibold text-orange-500">
+                15 דקות ביום = שינוי חיים
+              </p>
+            </div>
+
+            {/* Objection 2: Cost */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <div className="text-4xl mb-4">💰</div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">"זה יקר"</h3>
+              <p className="text-gray-600 mb-4">
+                שעה עם פסיכולוג עולה ₪200-400. שעה עם עורך דין ₪300-500. הספר שלנו: ₪59-89.
+              </p>
+              <p className="text-lg font-semibold text-orange-500">
+                ₪59 = ¼ משעת טיפול
+              </p>
+            </div>
+
+            {/* Objection 3: Doubt */}
+            <div className="bg-white p-8 rounded-xl shadow-lg">
+              <div className="text-4xl mb-4">❓</div>
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">"זה יעבוד לי?"</h3>
+              <p className="text-gray-600 mb-4">
+                למעלה מ-500 קוראים כבר חדפו על השינוי. אם לא יהיה שינוי - החזר כספי מלא ב-30 יום.
+              </p>
+              <p className="text-lg font-semibold text-orange-500">
+                🛡️ אחריות מוחלטת
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

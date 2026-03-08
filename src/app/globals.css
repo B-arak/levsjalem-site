@@ -1,10 +1,13 @@
 @import "tailwindcss";
 
-/* default theme variables; update with brand colors when known */
+/* default theme variables; updated with blue, sage-green and orange for CRO */
 :root {
   --color-bg: #fdfdfd;
   --color-text: #333333;
-  --color-accent: #2a5d34; /* dark green from mockup title */
+  --color-accent: #2a5d34; /* primary dark green accent (legacy) */
+  --color-primary-blue: #2563eb; /* Primary blue for trust and conversion */
+  --color-sage-green: #6b8e7f; /* Sage green for calm and growth */
+  --color-cta-orange: #f97316; /* Orange/golden for CTA buttons - high contrast */
   --font-sans: var(--font-sans);
   --font-body: var(--font-body);
 }

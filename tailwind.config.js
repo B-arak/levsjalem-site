@@ -8,6 +8,9 @@ module.exports = {
     extend: {
       colors: {
         accent: "var(--color-accent)",
+        "primary-blue": "var(--color-primary-blue)",
+        "sage-green": "var(--color-sage-green)",
+        "cta-orange": "var(--color-cta-orange)",
       },
     },
   },
