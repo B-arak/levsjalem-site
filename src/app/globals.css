@@ -1,28 +1,236 @@
 @import "tailwindcss";
 
-/* default theme variables; updated with blue, sage-green and orange for CRO */
 :root {
-  --color-bg: #fdfdfd;
-  --color-text: #333333;
-  --color-accent: #2a5d34; /* primary dark green accent (legacy) */
-  --color-primary-blue: #2563eb; /* Primary blue for trust and conversion */
-  --color-sage-green: #6b8e7f; /* Sage green for calm and growth */
-  --color-cta-orange: #f97316; /* Orange/golden for CTA buttons - high contrast */
-  --font-sans: var(--font-sans);
-  --font-body: var(--font-body);
+  --color-bg: #fbfaf7;
+  --color-surface: #ffffff;
+  --color-surface-warm: #f5f1ea;
+  --color-text: #1f1d1a;
+  --color-text-muted: #5a5550;
+  --color-text-soft: #8a847d;
+  --color-border: #e8e3da;
+  --color-border-soft: #f0ece4;
+
+  --color-primary: #2d5043;
+  --color-primary-dark: #1f3a30;
+  --color-primary-light: #4a7464;
+  --color-primary-soft: #e3ebe7;
+
+  --color-accent: #c4622d;
+  --color-accent-dark: #a14e22;
+  --color-accent-light: #e08b5c;
+
+  --color-success: #2d6a4f;
+  --color-warning: #b8860b;
+
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  --shadow-sm: 0 1px 2px rgba(31, 29, 26, 0.04), 0 1px 3px rgba(31, 29, 26, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(31, 29, 26, 0.05), 0 2px 4px -2px rgba(31, 29, 26, 0.05);
+  --shadow-lg: 0 10px 20px -5px rgba(31, 29, 26, 0.08), 0 4px 10px -4px rgba(31, 29, 26, 0.04);
+  --shadow-xl: 0 20px 40px -10px rgba(31, 29, 26, 0.12);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #111111;
-    --color-text: #f0f0f0;
-  }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
-  font-family: var(--font-body), sans-serif;
-  line-height: 1.6;
+  font-family: var(--font-body), system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display), Georgia, "Times New Roman", serif;
+  color: var(--color-text);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.container-narrow {
+  max-width: 768px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+.container-wide {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--color-accent);
+  color: white;
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: all 0.2s ease;
+  font-size: 1.0625rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-dark);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  transition: all 0.2s ease;
+  font-size: 1.0625rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-primary-dark);
+  color: white;
+  transform: translateY(-1px);
+}
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: var(--color-primary);
+  font-weight: 600;
+  padding: 0.875rem 2rem;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-primary);
+  transition: all 0.2s ease;
+  font-size: 1.0625rem;
+  cursor: pointer;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.prose-he {
+  font-size: 1.0625rem;
+  line-height: 1.85;
+  color: var(--color-text);
+}
+
+.prose-he p {
+  margin-bottom: 1.25rem;
+}
+
+.prose-he h2 {
+  font-size: 1.75rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.prose-he h3 {
+  font-size: 1.375rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.prose-he ul, .prose-he ol {
+  margin-bottom: 1.25rem;
+  padding-inline-start: 1.5rem;
+}
+
+.prose-he li {
+  margin-bottom: 0.5rem;
+}
+
+.prose-he strong {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.prose-he blockquote {
+  border-inline-start: 4px solid var(--color-accent);
+  padding-inline-start: 1.5rem;
+  margin-block: 1.5rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(45, 80, 67, 0.12);
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  margin-bottom: 0.375rem;
+  color: var(--color-text);
+}
+
+.field {
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
