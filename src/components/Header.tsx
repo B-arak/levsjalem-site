@@ -40,7 +40,7 @@ export default function Header() {
             </Link>
           ))}
           <Link
-            href="/checkout"
+            href="/buy"
             className="mr-2 px-5 py-2 bg-[var(--color-accent)] text-white font-semibold text-[15px] rounded-md hover:bg-[var(--color-accent-dark)] transition-colors shadow-sm"
           >
             רכישת הספר
@@ -97,7 +97,7 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/checkout"
+              href="/buy"
               onClick={() => setOpen(false)}
               className="mt-2 px-5 py-3 bg-[var(--color-accent)] text-white font-semibold rounded-md text-center"
             >
