@@ -70,6 +70,16 @@ a:hover {
   color: var(--color-primary-dark);
 }
 
+/* Footer links — bright enough on dark green background */
+.footer-link {
+  color: #dde8e1;
+  transition: color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: #ffffff;
+}
+
 ::selection {
   background-color: var(--color-primary);
   color: white;

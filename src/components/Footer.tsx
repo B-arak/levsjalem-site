@@ -15,7 +15,7 @@ export default function Footer() {
             >
               שלם מלב שבור
             </h3>
-            <p className="text-[15px] leading-relaxed" style={{ color: "#c8d8cc" }}>
+            <p className="text-[15px] leading-relaxed footer-link" style={{ cursor: "default" }}>
               המדריך הרגשי הראשון בעברית לגרושים ופרודים טריים — כלים מעשיים
               לריפוי הלב ובניית חיים חדשים אחרי גירושין.
             </p>
@@ -35,10 +35,7 @@ export default function Footer() {
                 { href: "/terms", label: "תקנון האתר" },
               ].map((l) => (
                 <li key={l.href}>
-                  <Link
-                    href={l.href}
-                    className="text-[#c8d8cc] hover:text-white transition-colors"
-                  >
+                  <Link href={l.href} className="footer-link">
                     {l.label}
                   </Link>
                 </li>
@@ -52,22 +49,16 @@ export default function Footer() {
             </h4>
             <ul className="space-y-3 text-[15px]">
               <li>
-                <a
-                  href="tel:+972528717980"
-                  className="text-[#c8d8cc] hover:text-white transition-colors"
-                >
+                <a href="tel:+972528717980" className="footer-link">
                   052-8717980
                 </a>
               </li>
               <li>
-                <a
-                  href="mailto:barakuty@gmail.com"
-                  className="text-[#c8d8cc] hover:text-white transition-colors"
-                >
+                <a href="mailto:barakuty@gmail.com" className="footer-link">
                   barakuty@gmail.com
                 </a>
               </li>
-              <li style={{ color: "#9ab5a2" }}>
+              <li style={{ color: "#b0c7ba" }}>
                 איסוף עצמי: הענבל 16/3, פתח תקווה (בתיאום)
               </li>
             </ul>
