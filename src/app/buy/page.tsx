@@ -95,7 +95,7 @@ export default function BuyPage() {
         }}
       />
 
-      <main dir="rtl" className="overflow-x-hidden">
+      <div>
 
         {/* ─── HERO ─────────────────────────────────────────────────── */}
         <section
@@ -654,7 +654,7 @@ export default function BuyPage() {
           </div>
         </section>
 
-      </main>
+      </div>
     </>
   );
 }
