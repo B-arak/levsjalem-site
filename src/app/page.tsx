@@ -84,12 +84,21 @@ export default function Home() {
                 <Link href="/checkout" className="btn-primary">
                   לרכישת הספר — מ-65 ₪
                 </Link>
-                <Link href="/about" className="btn-outline">
-                  קראו על הסיפור שמאחורי הספר
-                </Link>
+                <a
+                  href="/first-chapter.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-outline inline-flex items-center justify-center gap-2"
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                  קראו את הפרק הראשון חינם
+                </a>
               </div>
               <p className="mt-6 text-sm text-[var(--color-text-soft)]">
-                ✓ משלוח עד הבית או איסוף עצמי בפתח תקווה &nbsp;·&nbsp; ✓ תשלום מאובטח
+                ✓ משלוח עד הבית או איסוף עצמי בפתח תקווה &nbsp;·&nbsp; ✓ תשלום מאובטח &nbsp;·&nbsp;{" "}
+                <Link href="/about" className="underline hover:text-[var(--color-primary)]">
+                  הסיפור שמאחורי הספר
+                </Link>
               </p>
             </div>
 
