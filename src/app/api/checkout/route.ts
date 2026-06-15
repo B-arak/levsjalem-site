@@ -17,7 +17,7 @@ type CheckoutPayload = {
 };
 
 const BOOK_PRICE = 65;
-const SHIPPING_COST = 30;
+const SHIPPING_COST = 25;
 
 function validate(payload: CheckoutPayload): string | null {
   if (!payload.fullName || payload.fullName.length < 2) return "יש להזין שם מלא";

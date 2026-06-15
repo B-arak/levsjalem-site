@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 type DeliveryMethod = "pickup" | "shipping";
 
 const BOOK_PRICE = 65;
-const SHIPPING_COST = 30;
+const SHIPPING_COST = 25;
 
 export default function CheckoutForm() {
   const router = useRouter();
@@ -95,7 +95,7 @@ export default function CheckoutForm() {
               <div className="flex-1">
                 <div className="font-bold mb-1">משלוח עד הבית</div>
                 <div className="text-sm text-[var(--color-text-muted)]">לכל הארץ</div>
-                <div className="mt-2 font-bold text-[var(--color-primary-dark)]">95 ₪</div>
+                <div className="mt-2 font-bold text-[var(--color-primary-dark)]">90 ₪</div>
               </div>
             </div>
           </label>
@@ -213,7 +213,7 @@ export default function CheckoutForm() {
         </div>
         <div className="text-right text-sm text-[var(--color-text-muted)] leading-relaxed">
           <div>ספר: 65 ₪</div>
-          {delivery === "shipping" && <div>משלוח: 30 ₪</div>}
+          {delivery === "shipping" && <div>משלוח: 25 ₪</div>}
         </div>
       </div>
 

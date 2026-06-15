@@ -5,7 +5,7 @@ import CheckoutForm from "./CheckoutForm";
 export const metadata: Metadata = {
   title: "רכישת הספר",
   description:
-    "רכישת הספר ‘שלם מלב שבור’ — 65 ש\"ח באיסוף עצמי מפתח תקווה, או 95 ש\"ח עם משלוח עד הבית. תשלום מאובטח, חשבונית מס אוטומטית.",
+    "רכישת הספר ‘שלם מלב שבור’ — 65 ש\"ח באיסוף עצמי מפתח תקווה, או 90 ש\"ח עם משלוח עד הבית. תשלום מאובטח, חשבונית מס אוטומטית.",
   alternates: { canonical: "https://www.levshalem.net/checkout" },
   robots: { index: false, follow: true },
 };

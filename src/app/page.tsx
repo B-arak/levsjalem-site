@@ -34,7 +34,7 @@ const faqJsonLd = {
       name: "כמה עולה הספר?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "מחיר הספר הוא 65 ש\"ח באיסוף עצמי מהענבל 16/3 בפתח תקווה (בתיאום), או 95 ש\"ח עם משלוח עד הבית בכל הארץ.",
+        text: "מחיר הספר הוא 65 ש\"ח באיסוף עצמי מהענבל 16/3 בפתח תקווה (בתיאום), או 90 ש\"ח עם משלוח עד הבית בכל הארץ.",
       },
     },
     {
@@ -260,9 +260,9 @@ export default function Home() {
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
                 משלוח עד הבית
               </div>
-              <div className="text-3xl font-bold mb-1">95 ₪</div>
+              <div className="text-3xl font-bold mb-1">90 ₪</div>
               <p className="text-[var(--color-text-muted)] text-sm leading-relaxed">
-                כולל משלוח לכל הארץ (65 ₪ ספר + 30 ₪ משלוח)
+                כולל משלוח לכל הארץ (65 ₪ ספר + 25 ₪ משלוח)
               </p>
             </div>
           </div>

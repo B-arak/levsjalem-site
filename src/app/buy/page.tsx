@@ -5,7 +5,7 @@ import CheckoutForm from "@/app/checkout/CheckoutForm";
 export const metadata: Metadata = {
   title: "שלם מלב שבור — רכישת הספר | ברק יקותיאל",
   description:
-    "המדריך הרגשי לגרושים ופרודים טריים. כלים מעשיים לריפוי הלב ובניית חיים חדשים. מאת ברק יקותיאל. 65 ₪ (איסוף) | 95 ₪ (משלוח עד הבית).",
+    "המדריך הרגשי לגרושים ופרודים טריים. כלים מעשיים לריפוי הלב ובניית חיים חדשים. מאת ברק יקותיאל. 65 ₪ (איסוף) | 90 ₪ (משלוח עד הבית).",
   openGraph: {
     title: "שלם מלב שבור — מותר לך להמשיך",
     description:
@@ -85,7 +85,7 @@ export default function BuyPage() {
               },
               {
                 "@type": "Offer",
-                price: "95",
+                price: "90",
                 priceCurrency: "ILS",
                 availability: "https://schema.org/InStock",
                 description: "משלוח עד הבית — כל הארץ",
