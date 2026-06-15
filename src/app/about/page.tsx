@@ -26,26 +26,29 @@ export default function AboutPage() {
         </nav>
 
         <header className="mb-10">
-          <p className="text-[var(--color-accent)] font-semibold text-sm uppercase tracking-wider mb-2">
-            על הסופר
-          </p>
-          <h1 className="font-[family-name:var(--font-display)] text-4xl md:text-5xl mb-4">
-            על המסע שלי — ולמה בעצם כתבתי את הספר
-          </h1>
-          <p className="text-xl text-[var(--color-text-muted)] leading-relaxed">
-            ברק יקותיאל, בן 43, אבא לשלושה, נשוי בפעם השנייה באושר. משתדל לראות טוב בחיים, לבחור להתקדם בכל יום קצת — ובעיקר לא לתת לאחרים לנהל לי את הרגשות ואת החיים.
-          </p>
+          <div className="flex flex-col md:flex-row gap-8 items-start">
+            <div className="relative w-44 h-44 md:w-52 md:h-52 rounded-2xl overflow-hidden shrink-0 mx-auto md:mx-0 shadow-md">
+              <Image
+                src="/barak.png"
+                alt="ברק יקותיאל - מחבר הספר שלם מלב שבור"
+                fill
+                sizes="208px"
+                className="object-cover object-top"
+              />
+            </div>
+            <div>
+              <p className="text-[var(--color-accent)] font-semibold text-sm uppercase tracking-wider mb-2">
+                על הסופר
+              </p>
+              <h1 className="font-[family-name:var(--font-display)] text-4xl md:text-5xl mb-4">
+                על המסע שלי — ולמה בעצם כתבתי את הספר
+              </h1>
+              <p className="text-xl text-[var(--color-text-muted)] leading-relaxed">
+                ברק יקותיאל, בן 44, אבא לשלושה, נשוי בפעם השנייה באושר. משתדל לראות טוב בחיים, לבחור להתקדם בכל יום קצת — ובעיקר לא לתת לאחרים לנהל לי את הרגשות ואת החיים.
+              </p>
+            </div>
+          </div>
         </header>
-
-        <div className="relative aspect-[16/10] mb-10 rounded-xl overflow-hidden bg-[var(--color-surface-warm)]">
-          <Image
-            src="/barak.png"
-            alt="ברק יקותיאל - מחבר הספר שלם מלב שבור"
-            fill
-            sizes="(max-width: 768px) 100vw, 768px"
-            className="object-cover"
-          />
-        </div>
 
         <div className="prose-he">
           <h2>מי כותב ספר לגרושים — ולמה?</h2>
