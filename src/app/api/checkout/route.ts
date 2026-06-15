@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
-import { createGrowPayment } from "@/lib/grow";
 import { sendOrderEmail } from "@/lib/email";
+
+const GROW_PAYMENT_URL =
+  "https://pay.grow.link/NzY5MTU~c4c16917932f950f198686ccbf9c324b-MzU1Njk1OA";
 
 type CheckoutPayload = {
   fullName: string;
@@ -56,25 +58,5 @@ export async function POST(req: Request) {
     console.error("Failed to send order email:", e);
   });
 
-  try {
-    const result = await createGrowPayment({
-      orderId,
-      amount: payload.total,
-      description: `שלם מלב שבור - ${payload.delivery === "shipping" ? "משלוח" : "איסוף"}`,
-      customer: {
-        fullName: payload.fullName,
-        email: payload.email,
-        phone: payload.phone,
-      },
-    });
-
-    return NextResponse.json({
-      orderId,
-      paymentUrl: result.paymentUrl,
-      mode: result.mode,
-    });
-  } catch (e) {
-    console.error("Grow error:", e);
-    return NextResponse.json({ error: "שגיאה ביצירת עסקה. אנא נסו שוב או התקשרו לטלפון 052-8717980." }, { status: 500 });
-  }
+  return NextResponse.json({ orderId, paymentUrl: GROW_PAYMENT_URL });
 }
