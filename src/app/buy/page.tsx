@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import CheckoutForm from "@/app/checkout/CheckoutForm";
+import StickyBuyBar from "@/components/StickyBuyBar";
 
 export const metadata: Metadata = {
   title: "שלם מלב שבור — רכישת הספר | ברק יקותיאל",
@@ -654,6 +655,8 @@ export default function BuyPage() {
           </div>
         </section>
 
+        <div className="h-20 md:hidden" aria-hidden />
+        <StickyBuyBar href="#purchase" label="להזמנת הספר" />
       </div>
     </>
   );

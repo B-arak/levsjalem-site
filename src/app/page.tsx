@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
+import StickyBuyBar from "@/components/StickyBuyBar";
 
 export const metadata: Metadata = {
   title: "שלם מלב שבור — מדריך רגשי לגרושים ופרודים טריים",
@@ -302,6 +303,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <div className="h-20 md:hidden" aria-hidden />
+      <StickyBuyBar href="/checkout" />
     </>
   );
 }

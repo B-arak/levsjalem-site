@@ -217,6 +217,23 @@ export default function CheckoutForm() {
         </div>
       </div>
 
+      <div className="mb-6 space-y-2.5">
+        <div className="flex items-start gap-2.5 text-sm text-[var(--color-text)]">
+          <span className="text-base leading-tight">🖊️</span>
+          <span>
+            <strong>כל ספר נחתם אישית בהקדשה מברק.</strong> רוצים הקדשה לשם מסוים?
+            כתבו זאת בהערות למעלה.
+          </span>
+        </div>
+        <div className="flex items-start gap-2.5 text-sm text-[var(--color-text)]">
+          <span className="text-base leading-tight">🛡️</span>
+          <span>
+            <strong>אחריות אישית מלאה.</strong> קראתם ולא קיבלתם ערך? כתבו לי
+            ואדאג שתצאו מרוצים.
+          </span>
+        </div>
+      </div>
+
       {error && (
         <div role="alert" className="mb-4 p-4 bg-red-50 border border-red-200 text-red-800 rounded-lg text-sm">
           {error}
