@@ -39,11 +39,11 @@ export default function AboutPage() {
 
         <div className="relative aspect-[16/10] mb-10 rounded-xl overflow-hidden bg-[var(--color-surface-warm)]">
           <Image
-            src="/cover.png"
+            src="/barak.png"
             alt="ברק יקותיאל - מחבר הספר שלם מלב שבור"
             fill
             sizes="(max-width: 768px) 100vw, 768px"
-            className="object-contain p-8"
+            className="object-cover"
           />
         </div>
 
