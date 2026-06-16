@@ -77,8 +77,8 @@ export default function Home() {
                 לבנות חיים חדשים.
               </h1>
               <p className="text-lg md:text-xl text-[var(--color-text-muted)] leading-relaxed mb-8 max-w-xl">
-                גירושין הם אחת החוויות הקשות בחיים. סערת רגשות, בדידות, פחד מהעתיד.
-                <strong className="text-[var(--color-text)]"> המדריך הזה נכתב כדי ללוות אותך מהשבר חזרה לעצמך</strong> — עם כלים מעשיים, אמיתיים, ומתוך ניסיון אישי.
+                גירושין הם אחת החוויות הקשות בחיים — סערת רגשות, בדידות ופחד מהעתיד.
+                <strong className="text-[var(--color-text)]"> הספר הזה ילווה אותך צעד־צעד מהשבר חזרה אל עצמך</strong> — עם כלים מעשיים שנכתבו מתוך ניסיון אישי אמיתי.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <Link href="/checkout" className="btn-primary">
@@ -156,7 +156,7 @@ export default function Home() {
               מה תקבל במדריך
             </h2>
             <p className="text-[var(--color-text-muted)] text-lg">
-              המדריך הוא תמצית של שנות למידה, תרגול וניסיון אישי — מאורגן בצורה פרקטית שתוכל ליישם מהיום הראשון.
+              תמצית של שנות למידה, תרגול וניסיון אישי — מסודרת בצורה מעשית שתוכל ליישם כבר מהיום הראשון.
             </p>
           </div>
 
@@ -250,7 +250,7 @@ export default function Home() {
             לרכישת הספר
           </h2>
           <p className="text-white/85 text-lg mb-10 max-w-xl mx-auto">
-            ספר פיזי איכותי ומודפס. בחר את אופן המסירה שמתאים לך.
+            ספר פיזי ואיכותי — כל עותק נחתם אישית בהקדשה מברק. בחר את אופן המסירה שמתאים לך.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-5 max-w-3xl mx-auto mb-8">
