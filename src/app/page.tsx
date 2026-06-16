@@ -119,33 +119,21 @@ export default function Home() {
       </section>
 
       <section className="py-16 md:py-20 bg-[var(--color-surface)]">
-        <div className="container-narrow text-center">
+        <div className="container-narrow text-center max-w-2xl mx-auto">
           <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl mb-6">
             אם משהו מהדברים האלה מוכר לך — המדריך הזה כתוב בשבילך
           </h2>
-          <p className="text-[var(--color-text-muted)] text-lg mb-10">
-            סימן שאינך לבד בתחושות האלה. אלה הרגשות שאלפי גרושים וגרושות חווים — וניתן לעבוד איתם.
-          </p>
-          <ul className="grid sm:grid-cols-2 gap-3 text-right text-[var(--color-text)]">
-            {[
-              "כעס שלא נותן מנוחה",
-              "בדידות שמרגישה בלתי נסבלת",
-              "חרדה מהעתיד הכלכלי או המשפחתי",
-              "ירידה חדה בביטחון העצמי",
-              "תחושת אשמה וכישלון",
-              "מחשבות חוזרות על העבר",
-              "קושי לישון או להתרכז",
-              "פחד שלעולם לא תאהב שוב",
-            ].map((item) => (
-              <li
-                key={item}
-                className="flex items-start gap-3 bg-[var(--color-surface-warm)] p-4 rounded-lg"
-              >
-                <span className="text-[var(--color-accent)] font-bold mt-0.5">•</span>
-                <span className="text-[15px]">{item}</span>
-              </li>
-            ))}
-          </ul>
+          <div className="space-y-5 text-lg leading-relaxed text-[var(--color-text-muted)]">
+            <p>
+              כעס שלא נותן מנוחה. בדידות שמרגישה בלתי נסבלת. חרדה מהעתיד — הכלכלי והמשפחתי. ביטחון עצמי שנשחק, תחושת אשמה וכישלון, ומחשבות שחוזרות שוב ושוב אל העבר.
+            </p>
+            <p>
+              לילות בלי שינה, קושי להתרכז ביום שאחרי — ולפעמים, מתחת לכל אלה, גם הפחד השקט מכולם: שלעולם לא תאהב שוב.
+            </p>
+            <p className="text-[var(--color-text)] font-semibold">
+              סימן שאינך לבד בתחושות האלה. אלה הרגשות שאלפי גרושים וגרושות חווים — וניתן לעבוד איתם.
+            </p>
+          </div>
         </div>
       </section>
 
