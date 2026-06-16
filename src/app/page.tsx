@@ -91,7 +91,7 @@ export default function Home() {
                   className="btn-outline inline-flex items-center justify-center gap-2"
                 >
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-                  קראו את הפרק הראשון חינם
+                  קרא את הפרק הראשון חינם
                 </a>
               </div>
               <p className="mt-6 text-sm text-[var(--color-text-soft)]">
@@ -188,7 +188,7 @@ export default function Home() {
 
           <div className="mt-10 bg-[var(--color-primary-soft)] rounded-xl p-7 text-center">
             <p className="text-[var(--color-primary-dark)] font-semibold text-lg mb-1">
-              המקורות שלו: אימון אישי · פסיכולוגיה חיובית · NLP · מקורות היהדות
+              המקורות של הספר: אימון אישי · פסיכולוגיה חיובית · NLP · מקורות היהדות
             </p>
             <p className="text-[var(--color-text-muted)]">
               שילוב נדיר של ידע מערבי מודרני עם חכמה יהודית עתיקה, מותאם לקורא הישראלי.
