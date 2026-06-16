@@ -30,7 +30,7 @@ export default function ThankYouPage() {
           תודה על הרכישה
         </h1>
         <p className="text-xl text-[var(--color-text-muted)] mb-8 leading-relaxed">
-          קיבלנו את ההזמנה שלכם — ואתם בדרך הנכונה לריפוי הלב.
+          קיבלנו את ההזמנה שלך — ואתה בדרך הנכונה לריפוי הלב.
         </p>
 
         <div className="bg-[var(--color-surface)] border border-[var(--color-border-soft)] rounded-xl p-7 mb-8 text-right">
@@ -38,15 +38,15 @@ export default function ThankYouPage() {
           <ul className="space-y-3 text-[var(--color-text-muted)]">
             <li className="flex items-start gap-3">
               <span className="text-[var(--color-primary)] font-bold mt-1">1.</span>
-              <span>תקבלו מייל אישור עם פרטי ההזמנה וחשבונית מס.</span>
+              <span>תקבל מייל אישור עם פרטי ההזמנה וחשבונית מס.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-[var(--color-primary)] font-bold mt-1">2.</span>
-              <span>אצור איתכם קשר תוך 24 שעות לתיאום משלוח או איסוף.</span>
+              <span>אצור איתך קשר תוך 24 שעות לתיאום משלוח או איסוף.</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-[var(--color-primary)] font-bold mt-1">3.</span>
-              <span>הספר יגיע אליכם תוך 3-5 ימי עסקים.</span>
+              <span>הספר יגיע אליך תוך 3–5 ימי עסקים.</span>
             </li>
           </ul>
         </div>

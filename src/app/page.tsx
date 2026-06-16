@@ -77,7 +77,7 @@ export default function Home() {
                 לבנות חיים חדשים.
               </h1>
               <p className="text-lg md:text-xl text-[var(--color-text-muted)] leading-relaxed mb-8 max-w-xl">
-                גירושין הם אחד מהרגעים הקשים בחיים. סערת רגשות, בדידות, פחד מהעתיד.
+                גירושין הם אחת החוויות הקשות בחיים. סערת רגשות, בדידות, פחד מהעתיד.
                 <strong className="text-[var(--color-text)]"> המדריך הזה נכתב כדי ללוות אותך מהשבר חזרה לעצמך</strong> — עם כלים מעשיים, אמיתיים, ומתוך ניסיון אישי.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
@@ -124,7 +124,7 @@ export default function Home() {
             אם משהו מהדברים האלה מוכר לך — המדריך הזה כתוב בשבילך
           </h2>
           <p className="text-[var(--color-text-muted)] text-lg mb-10">
-            סימן מובהק שאת/ה לא לבד בתחושות האלה. אלה הרגשות שאלפי גרושים וגרושות חווים — וניתן לעבוד איתם.
+            סימן שאינך לבד בתחושות האלה. אלה הרגשות שאלפי גרושים וגרושות חווים — וניתן לעבוד איתם.
           </p>
           <ul className="grid sm:grid-cols-2 gap-3 text-right text-[var(--color-text)]">
             {[
@@ -135,7 +135,7 @@ export default function Home() {
               "תחושת אשמה וכישלון",
               "מחשבות חוזרות על העבר",
               "קושי לישון או להתרכז",
-              "פחד שלעולם לא תאהב/י שוב",
+              "פחד שלעולם לא תאהב שוב",
             ].map((item) => (
               <li
                 key={item}
@@ -153,10 +153,10 @@ export default function Home() {
         <div className="container-wide">
           <div className="text-center mb-12 max-w-2xl mx-auto">
             <h2 className="font-[family-name:var(--font-display)] text-3xl md:text-4xl mb-4">
-              מה תקבלו במדריך
+              מה תקבל במדריך
             </h2>
             <p className="text-[var(--color-text-muted)] text-lg">
-              המדריך הוא תמצית של שנים של למידה, תרגול וניסיון אישי — מאורגן בצורה פרקטית שתוכלו ליישם מהיום הראשון.
+              המדריך הוא תמצית של שנות למידה, תרגול וניסיון אישי — מאורגן בצורה פרקטית שתוכל ליישם מהיום הראשון.
             </p>
           </div>
 
@@ -169,7 +169,7 @@ export default function Home() {
                 להבין את הרגשות
               </h3>
               <p className="text-[var(--color-text-muted)] text-[15px] leading-relaxed">
-                מה קורה במוח שלכם אחרי גירושין, למה זה כל כך כואב, ולמה חשוב לא להדחיק אלא לעבוד עם זה.
+                מה קורה במוח שלך אחרי גירושין, למה זה כל כך כואב, ולמה חשוב לא להדחיק אלא לעבוד עם זה.
               </p>
             </article>
 
@@ -181,7 +181,7 @@ export default function Home() {
                 כלים מעשיים ליישום מיידי
               </h3>
               <p className="text-[var(--color-text-muted)] text-[15px] leading-relaxed">
-                תרגילים, שיטות חשיבה, ופעולות קטנות מהיומיום שעוזרים לייצב את הרגש ולחזק את הביטחון העצמי.
+                תרגילים, שיטות חשיבה ופעולות קטנות מהיומיום שעוזרות לייצב את הרגש ולחזק את הביטחון העצמי.
               </p>
             </article>
 
@@ -193,7 +193,7 @@ export default function Home() {
                 דרך לחיים חדשים
               </h3>
               <p className="text-[var(--color-text-muted)] text-[15px] leading-relaxed">
-                איך לתכנן את הפרק הבא, איך לסלוח (גם לעצמכם), ואיך לבנות יחסים בריאים יותר — עם עצמכם ועם הסביבה.
+                איך לתכנן את הפרק הבא, איך לסלוח (גם לעצמך) ואיך לבנות יחסים בריאים יותר — עם עצמך ועם הסביבה.
               </p>
             </article>
           </div>
@@ -250,7 +250,7 @@ export default function Home() {
             לרכישת הספר
           </h2>
           <p className="text-white/85 text-lg mb-10 max-w-xl mx-auto">
-            ספר פיזי איכותי, מודפס במלואו. בחרו את אופן המסירה שמתאים לכם.
+            ספר פיזי איכותי ומודפס. בחר את אופן המסירה שמתאים לך.
           </p>
 
           <div className="grid sm:grid-cols-2 gap-5 max-w-3xl mx-auto mb-8">

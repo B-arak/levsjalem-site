@@ -104,10 +104,10 @@ export default function AboutPage() {
 
         <div className="mt-12 p-8 bg-[var(--color-primary-soft)] rounded-xl text-center">
           <h2 className="font-[family-name:var(--font-display)] text-2xl mb-3 text-[var(--color-primary-dark)]">
-            מוכנים להתחיל את המסע?
+            מוכן להתחיל את המסע?
           </h2>
           <p className="text-[var(--color-text-muted)] mb-6">
-            הספר מחכה לכם — בגרסה פיזית, במשלוח עד הבית או באיסוף עצמי.
+            הספר מחכה לך — בגרסה פיזית, במשלוח עד הבית או באיסוף עצמי.
           </p>
           <Link href="/checkout" className="btn-primary">
             לרכישת הספר ←

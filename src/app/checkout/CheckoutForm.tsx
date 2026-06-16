@@ -67,7 +67,7 @@ export default function CheckoutForm() {
     >
       <fieldset className="mb-7">
         <legend className="font-bold text-lg mb-3 text-[var(--color-text)]">
-          איך תרצו לקבל את הספר?
+          איך תרצה לקבל את הספר?
         </legend>
 
         <div className="grid sm:grid-cols-2 gap-3">
@@ -221,15 +221,15 @@ export default function CheckoutForm() {
         <div className="flex items-start gap-2.5 text-sm text-[var(--color-text)]">
           <span className="text-base leading-tight">🖊️</span>
           <span>
-            <strong>כל ספר נחתם אישית בהקדשה מברק.</strong> רוצים הקדשה לשם מסוים?
-            כתבו זאת בהערות למעלה.
+            <strong>כל ספר נחתם אישית בהקדשה מברק.</strong> רוצה הקדשה לשם מסוים?
+            כתוב זאת בהערות למעלה.
           </span>
         </div>
         <div className="flex items-start gap-2.5 text-sm text-[var(--color-text)]">
           <span className="text-base leading-tight">🛡️</span>
           <span>
-            <strong>אחריות אישית מלאה.</strong> קראתם ולא קיבלתם ערך? כתבו לי
-            ואדאג שתצאו מרוצים.
+            <strong>אחריות אישית מלאה.</strong> קראת ולא קיבלת ערך? כתוב לי
+            ואדאג שתצא מרוצה.
           </span>
         </div>
       </div>

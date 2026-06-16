@@ -25,7 +25,7 @@ export default function CheckoutPage() {
             רכישת הספר
           </h1>
           <p className="text-[var(--color-text-muted)] text-lg">
-            כמה פרטים, וזהו. הספר בדרך אליכם.
+            כמה פרטים, וזהו. הספר בדרך אליך.
           </p>
         </header>
 
