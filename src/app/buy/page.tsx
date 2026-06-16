@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: "שלם מלב שבור — מותר לך להמשיך",
     description:
       "ספר שנכתב מתוך ניסיון אישי. כלים מעשיים לריפוי הלב ובניית חיים חדשים אחרי גירושין.",
-    images: [{ url: "/cover.jpg", width: 800, height: 600, alt: "שלם מלב שבור — עטיפת הספר" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "שלם מלב שבור — עטיפת הספר" }],
   },
 };
 

@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     description: SITE_DESCRIPTION,
     images: [
       {
-        url: "/cover.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "שלם מלב שבור — מדריך רגשי לגרושים ופרודים טריים",
@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "שלם מלב שבור — מדריך רגשי לגרושים ופרודים טריים",
     description: SITE_DESCRIPTION,
-    images: ["/cover.png"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,

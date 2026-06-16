@@ -29,13 +29,13 @@ export async function generateMetadata(
       publishedTime: post.date,
       modifiedTime: post.updated || post.date,
       authors: ["ברק יקותיאל"],
-      images: ["/cover.png"],
+      images: ["/og-image.png"],
     },
     twitter: {
       card: "summary_large_image",
       title: post.title,
       description: post.description,
-      images: ["/cover.png"],
+      images: ["/og-image.png"],
     },
   };
 }
