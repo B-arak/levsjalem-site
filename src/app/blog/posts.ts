@@ -3,6 +3,7 @@ export type BlogPost = {
   title: string;
   description: string;
   date: string;
+  updated?: string;
   dateDisplay: string;
   readingTime: string;
   content: string;
@@ -145,6 +146,7 @@ export const posts: BlogPost[] = [
     description:
       "גירושים בהסכמה הם פתרון ידידותי לפירוק נישואין — חיסכון כספי, רגשי ומשפטי. מתי זה אפשרי, איך זה עובד, ולמה זה כדאי גם לכם וגם לילדים.",
     date: "2023-02-01",
+    updated: "2024-08-21",
     dateDisplay: "1 בפברואר 2023 (עודכן: 21 באוגוסט 2024)",
     readingTime: "דקה קריאה",
     content: `

@@ -27,6 +27,7 @@ export async function generateMetadata(
       description: post.description,
       url,
       publishedTime: post.date,
+      modifiedTime: post.updated || post.date,
       authors: ["ברק יקותיאל"],
       images: ["/cover.png"],
     },
@@ -128,7 +129,7 @@ export default async function BlogPostPage(
     description: post.description,
     image: "https://www.levshalem.net/cover.png",
     datePublished: post.date,
-    dateModified: post.date,
+    dateModified: post.updated || post.date,
     inLanguage: "he-IL",
     author: {
       "@type": "Person",
@@ -182,7 +183,7 @@ export default async function BlogPostPage(
 
         <div className="mt-16 p-8 bg-[var(--color-surface-warm)] rounded-xl text-center">
           <h2 className="font-[family-name:var(--font-display)] text-2xl mb-3">
-            לעמוד יותר עם זה לבד
+            אתה לא צריך להתמודד עם זה לבד
           </h2>
           <p className="text-[var(--color-text-muted)] mb-6 max-w-xl mx-auto">
             הספר ״שלם מלב שבור״ הוא המדריך הרגשי הראשון בעברית לגרושים ופרודים טריים — עם כלים מעשיים ליישום מיידי.
