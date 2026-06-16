@@ -406,6 +406,95 @@ export default function BuyPage() {
           </div>
         </section>
 
+        {/* ─── PERSONAL LETTER ──────────────────────────────────────── */}
+        <section className="py-24 md:py-32" style={{ background: "#f7f1eb" }}>
+          <div className="container-narrow">
+            <div className="max-w-2xl mx-auto">
+              <p
+                className="text-sm font-semibold tracking-[0.15em] uppercase mb-8 text-center"
+                style={{ color: "#c4622d" }}
+              >
+                מכתב אישי ממני אליך
+              </p>
+
+              <div className="space-y-6 text-lg leading-relaxed" style={{ color: "var(--color-text)" }}>
+                <p>
+                  <strong>אם אתה גרוש טרי או פרוד — כנראה שגם אתה חווה בתקופה האחרונה רכבת הרים רגשית:</strong>{" "}
+                  כעס, עצב, בדידות, חרדה, פחד מהעתיד, ביטחון עצמי נמוך, האשמה עצמית, ובמקרים הקשים אפילו מחשבות אובדניות.
+                </p>
+
+                <p className="font-[family-name:var(--font-display)] text-3xl" style={{ color: "#2d5043" }}>
+                  נכון?
+                </p>
+
+                <p>
+                  אם אתה מסכים, כנראה שבעומק ליבך היית רוצה להחזיר לעצמך את השליטה על החיים, להיות רגוע ושליו יותר, להפחית את הטלטלה הרגשית, להשאיר את העבר מאחוריך ולהתקדם הלאה — לחיים טובים ושלמים יותר, למענך ולמען הילדים שלך.
+                </p>
+
+                <p className="font-[family-name:var(--font-display)] text-3xl" style={{ color: "#c4622d" }}>
+                  אבל...
+                </p>
+
+                <p>
+                  הבעיה היא שאתה נמצא במתקפה רגשית שלא מסתיימת. שוב הגרושה מאיימת, שוב הגרוש מאשים או נעלם, שוב אתה נזכר בבגידה או בפגיעה — והרגשות מתעוררים מחדש, מנהלים לך את החיים ומקשים עליך לדאוג לעצמך.
+                </p>
+
+                <p
+                  className="font-[family-name:var(--font-display)] text-2xl md:text-3xl leading-snug"
+                  style={{ color: "var(--color-text)" }}
+                >
+                  מה היית נותן עבור פתרון שיעזור לך לנהל טוב יותר את הרגשות?
+                </p>
+
+                <p>
+                  לנקות את משקעי העבר, לסלוח, לחזק את הביטחון והערך העצמי, להתכונן למערכות יחסים עתידיות — ובעיקר להשאיר את העבר בעבר ולהתחיל להסתכל קדימה באופטימיות.
+                </p>
+
+                <p>
+                  אתה אולי לא מאמין שזה אפשרי. הכאב חזק מדי עכשיו. אבל{" "}
+                  <strong>אני יודע שזה אפשרי</strong> — ואני רוצה לעזור גם לך להתחיל לחיות מחדש, לנהל את הרגשות שלך במקום שהם ינהלו אותך, ולרפא את הלב השבור.
+                </p>
+
+                <p>
+                  במדריך תלמד איך הרגלים חדשים, פעולות קטנות ולקיחת אחריות על המחשבות, הדיבור והמעשים שלך יעזרו לך להתמודד עם הכעס, הקנאה, האשמה, הבדידות ואובדן הביטחון העצמי; איך לסליחה יש כוח ריפוי עצום; ומהי הדרך הטובה ביותר להתבונן ולתכנן את חייך מכאן והלאה.
+                </p>
+
+                <p style={{ color: "var(--color-text-muted)" }}>
+                  הכלים שתמצא במדריך מגיעים מעולמות האימון האישי, הפסיכולוגיה החיובית, ה־NLP, מקורות היהדות ופנימיות התורה.
+                </p>
+
+                <p
+                  className="font-[family-name:var(--font-display)] text-2xl md:text-3xl leading-snug"
+                  style={{ color: "#2d5043" }}
+                >
+                  אני מזמין אותך להצטרף אליי למסע של ריפוי הלב והתחלה חדשה ושלמה יותר.
+                </p>
+              </div>
+
+              <div className="mt-10 pt-8" style={{ borderTop: "1px solid #e2d9cf" }}>
+                <p className="text-base" style={{ color: "var(--color-text-muted)" }}>
+                  קריאה מהנה ומועילה,
+                </p>
+                <p
+                  className="font-[family-name:var(--font-display)] text-2xl mt-1"
+                  style={{ color: "var(--color-text)" }}
+                >
+                  ברק יקותיאל
+                </p>
+                <p className="text-sm mt-0.5" style={{ color: "#c4622d" }}>
+                  מנטלמן להצלחה שלך
+                </p>
+              </div>
+
+              <div className="mt-10 text-center">
+                <a href="#purchase" className="btn-primary inline-block text-lg px-10 py-4">
+                  אני רוצה להתחיל — לרכישת הספר ←
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ─── INSIDE THE BOOK ──────────────────────────────────────── */}
         <section
           id="inside"
